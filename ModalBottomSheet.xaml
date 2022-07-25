@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             ControlTemplate="{DynamicResource Template}"
+             x:Class="S1LV3Rman.BottomSheet.ModalBottomSheet"
+             x:Name="self"
+             IsVisible="{Binding IsOpened, Source={x:Reference self}}">
+    
+    <ContentView.Resources>
+        
+        <ControlTemplate x:Key="Template">
+            
+            <Grid RowDefinitions="*"
+                  ColumnDefinitions="*">
+                
+                <RoundRectangle x:Name="tint"
+                                Fill="#40000000"/>
+                
+                <RoundRectangle x:Name="bodyBacking"
+                                Fill="#00000000"/>
+                
+                <Grid x:Name="body"
+                      RowDefinitions="*"
+                      ColumnDefinitions="*">
+                
+                    <RoundRectangle x:Name="background"
+                                    Fill="{Binding Color, Source={x:Reference self}}"/>
+                
+                    <ScrollView x:Name="scroll"
+                                Padding="{Binding Padding, Source={x:Reference self}}"
+                                VerticalOptions="Start"
+                                VerticalScrollBarVisibility="Never"
+                                HorizontalScrollBarVisibility="Never">
+                
+                        <ContentPresenter x:Name="content"
+                                          IsClippedToBounds="True"
+                                          VerticalOptions="Start"/>                    
+                    </ScrollView>
+                    
+                </Grid>
+                
+            </Grid>
+            
+        </ControlTemplate>
+        
+    </ContentView.Resources>
+    
+</ContentView>
