@@ -82,6 +82,7 @@ Sets the color
 ```xaml
 <bottomSheet:ModalBottomSheet Color="White">
 </bottomSheet:ModalBottomSheet>
+```
 
 ### `BlockExpanding`
 Disables expanding to fullscreen
