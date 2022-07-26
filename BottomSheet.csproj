@@ -17,7 +17,7 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 		<PackageId>Sm.Maui.BottomSheet</PackageId>
 		<Title>Sm.Maui.BottomSheet</Title>
-		<Version>1.0.5</Version>
+		<Version>0.1.6</Version>
 		<Authors>S1LV3Rman</Authors>
 		<Company>S1LV3Rman</Company>
 		<Product>BottomSheet</Product>

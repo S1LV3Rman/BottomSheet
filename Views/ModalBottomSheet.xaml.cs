@@ -14,7 +14,7 @@ namespace S1LV3Rman.BottomSheet
             Scroll
         }
 
-        [AutoBindable(DefaultValue = "20d", OnChanged = nameof(OnCornersRadiusChanged))]
+        [AutoBindable(OnChanged = nameof(OnCornersRadiusChanged))]
         private double _cornersRadius;
 
         [AutoBindable(DefaultValue = "Color.FromArgb(\"#ffffffff\")")]
