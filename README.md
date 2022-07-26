@@ -93,4 +93,4 @@ Disables expanding to fullscreen
 ```
 
 ### `IsOpened`
-Readonly. `True` when opened, `False when closed
+Readonly. `True` when opened, `False` when closed
