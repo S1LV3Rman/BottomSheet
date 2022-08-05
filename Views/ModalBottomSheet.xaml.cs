@@ -108,8 +108,8 @@ namespace S1LV3Rman.BottomSheet
             EMPTY_HEIGHT + Padding.VerticalThickness;
         private double MinY => BlockExpanding ? _pageHeight - MinimizedHeight : 0d;
 
-        private const double SWIPE_MIN_VELOCITY = 0.7d;
-        private const double SWIPE_MIN_LENGTH = 75d;
+        private const double SWIPE_MIN_VELOCITY = 1.25d;
+        private const double SWIPE_MIN_LENGTH = 60d;
 
         private const double THRESHOLD_DELTA = 40d;
         private const double MAX_MINIMIZED_SIZE = 0.5d;
